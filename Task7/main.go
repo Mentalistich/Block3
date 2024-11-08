@@ -12,6 +12,7 @@ func writeToChan(i int, c chan int, wg *sync.WaitGroup) {
 	defer func() { <-c }()
 	time.Sleep(time.Second * 20)
 	fmt.Println("Обработка задачи номер: ", i)
+
 }
 
 func main() {

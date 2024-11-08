@@ -18,6 +18,7 @@ func main() {
 	channel := make(chan int, 10)
 	timeout := time.Second * 5
 	go longTimeExecution(channel)
+
 	defer close(channel)
 	for {
 		select {

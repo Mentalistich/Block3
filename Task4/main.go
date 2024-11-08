@@ -19,6 +19,7 @@ func main() {
 			fmt.Println(result)
 			if result > 5 {
 				break
+
 			}
 
 		}
