@@ -39,6 +39,7 @@ func toString(ch <-chan int) <-chan string {
 	}()
 
 	return out
+
 }
 
 func main() {

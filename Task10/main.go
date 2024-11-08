@@ -14,6 +14,7 @@ func main() {
 		go func() {
 			defer wg.Done()
 			mu.RLock()
+
 			x := counter
 			fmt.Println(x)
 			mu.RUnlock()

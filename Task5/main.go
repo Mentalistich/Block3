@@ -45,6 +45,7 @@ func fanIn(channels ...<-chan int) <-chan int {
 		close(out)
 	}()
 	return out
+
 }
 
 func main() {

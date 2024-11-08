@@ -12,6 +12,7 @@ func main() {
 		go func(i int) {
 			fmt.Println(i*i + 2 - 4*i)
 			wg.Done()
+
 		}(i)
 	}
 	wg.Wait()

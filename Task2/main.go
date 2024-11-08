@@ -8,6 +8,7 @@ func main() {
 		go func(i int) {
 			i = i * 2
 			result <- i
+
 		}(i)
 		fmt.Println(<-result)
 	}

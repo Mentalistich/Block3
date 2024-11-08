@@ -14,6 +14,7 @@ func worker(i int, c <-chan int, wg *sync.WaitGroup) {
 		fmt.Printf("Worker %d выполняет задачу %d\n", i, n)
 		time.Sleep(1 * time.Second)
 		fmt.Printf("Worker %d выполнил задачу %d\n", i, n)
+
 	}
 }
 
